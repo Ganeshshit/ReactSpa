@@ -1,9 +1,11 @@
 {
   "name": "frontend",
+  "homepage": "https://Ganeshshit.github.io/ReactSpa",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@paypal/react-paypal-js": "^7.8.3",
+    "@react-icons/all-files": "^4.1.0",
     "@reduxjs/toolkit": "^1.9.1",
     "@stripe/react-stripe-js": "^1.16.4",
     "@stripe/stripe-js": "^1.46.0",
@@ -17,7 +19,6 @@
     "framer-motion": "^10.12.18",
     "html2canvas": "^1.4.1",
     "jspdf": "^2.5.1",
-    "node-sass": "^7.0.3",
     "rc-rate": "^2.12.0",
     "rc-slider": "^10.2.1",
     "react": "^18.2.0",
@@ -27,7 +28,7 @@
     "react-country-region-selector": "^3.6.1",
     "react-datepicker": "^4.14.1",
     "react-dom": "^18.2.0",
-    "react-icons": "^4.7.1",
+    "react-icons": "^4.11.0",
     "react-multi-carousel": "^2.8.4",
     "react-paginate": "^8.1.4",
     "react-quill": "^2.0.0",
@@ -41,6 +42,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -63,5 +66,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.0.0"
   }
 }
